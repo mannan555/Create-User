@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>Address Details</h2>
+    <div class="container">
+
+    <form id="addressform">
+        <label for="name">Pincode</label>  <br>
+        <input type="text" id="pincode" name="pincode" maxlength="6" required onchange="fetchLocationInfo()"><br>
+        <span id="pincodeErrorMessage" class="error-message" style="display: none;">Invalid pincode.</span>
+          
+
+        <label for="city">City: </label> <br>
+        <input type="text" name="city" id="city" readonly><br>
+
+        <label for="state">State: </label> <br>
+        <input type="text" name="state" id="state" readonly><br>
+
+        <label for="address1">Address Line 1: </label> <br>
+        <input type="text" name="address1" id="adddress1" ><br>
+
+        <label for="address2">Address Line 2: </label> <br>
+        <input type="text" name="address2" id="address2" ><br>
+       
+        <!-- <button type="submit">Next</button> -->
+        
+    </form>
+    <br>
+    <button onclick="addressSubmit()" class="button1">Next</button>
+    
+
+</div>
+    <script src="index.js"></script>  
+</body>
+</html>

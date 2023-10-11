@@ -1,0 +1,75 @@
+/* Css Styling for index.html page */
+body{
+    margin:0;
+    padding: 0;
+    background-color: aquamarine;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding:80px;
+    background:black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+
+h1{
+    /* text-align: center; */
+    color: black;
+    padding:15px;
+}
+
+label{
+    color: violet;
+    font-size: 17px;
+    text-align: left;
+}
+
+form{
+    text-align: center; 
+    width: 80%;
+}
+
+form input{
+    padding-bottom: 10px;
+    margin-bottom:10px;
+}
+
+form select{
+    font-size: 15px;
+    /* padding: 10px; */
+    width: 173px;
+    height: 30px;
+}
+
+.button1{
+    cursor: pointer;
+    font-size: 20px;
+    width: 173px;
+    border-radius: 5px;
+    padding: 10 0 10 0px;
+    
+}
+
+.textbox{
+    display: none;
+}
+
+.error-message{
+    color:red;
+    font-size: 12px;
+}
+.character-limit-validation-message{
+    color: red;
+    font-size: 12px;
+}

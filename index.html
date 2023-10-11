@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1>CREATE USER</h1>
+
+    <div class="container">
+
+    <form>  
+        <label for="name">First Name</label><br>  
+        <input type="text" id="firstname" name="name" maxlength="25" required>
+        <span id="fn" class="character-limit-validation-message" style="display: none;">Maximum characters limit 25 reached.</span>
+        <br>  
+
+        <label for="name">Last Name</label><br>  
+        <input type="text" id="lastname" name="name" maxlength="25" required>
+        <span id="ln" class="character-limit-validation-message" style="display: none;">Maximum characters limit 25 reached.</span>
+       
+        <br>
+
+        <label for="name">Middle Name</label><br>  
+        <input type="text" id="middlename" name="name" maxlength="25">
+        <span id="mn" class="character-limit-validation-message" style="display: none;">Maximum characters limit 25 reached.</span>
+        <br>
+
+        <label for="identity">Identity:</label><br> 
+
+        <select name="identity" id="identityproof" required onchange="askIdDetails()">
+            <option value="select" disabled selected>Select</option>
+            <option value="Passport">Passport</option>
+            <option value="aadhar">Aadhar Card</option>
+D            <option value="drivinglicense">Driving License</option>
+        </select>
+        <span id="dropdownError" class="error-message" style="display: none;">Please select value from dropdown.</span>
+        <br><br>
+        <div class="ids">
+            <div id="passport" class="textbox">
+                <label for="Passport">Passport: </label>
+                <br>
+                <input type="text" id="input1" placeholder="Enter Passport Number" maxlength="8">
+                <span id="passportErrorMessage" class="error-message" style="display: none;">Invalid Passport Number.</span>
+            </div>
+
+            <div id="aadhar" class="textbox">
+                <label for="Aadhar">Aadhar Card: </label>
+                <br>
+                <input type="text" id="input2" placeholder="Enter Aadhar Number" maxlength="14">
+                <span id="aadharErrorMessage" class="error-message" style="display: none;">Invalid Aadhar Card Number.</span>
+            </div>
+
+
+            <div id="drivinglicense" class="textbox">
+                <label for="Drivinglicense">Driving License: </label>
+                <br>
+                <input type="text" id="input3" placeholder="Enter Driving License Number" maxlength="16">
+                <span id="licenseErrorMessage" class="error-message" style="display: none;">Invalid Driving License Number.</span>
+            </div>     
+            <br>
+        </div>
+
+            
+            <input type="submit" value="Next" class="button1">
+
+      </form>
+     
+    </div>
+      
+
+
+
+    <script src="index.js"></script>    
+</body>
+</html>
